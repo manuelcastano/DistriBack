@@ -8,4 +8,5 @@ interface AppControllerInterface {
     fun host(): String
     fun uploadFile(file: MultipartFile): List<FileUploaded>?
     fun capacity(): String
+    fun getFiles(): List<FileUploaded>?
 }

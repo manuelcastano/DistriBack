@@ -19,5 +19,7 @@ class AppServiceImplementation : AppServiceInterface{
         return "mucho"
     }
 
-
+    override fun getFiles(): List<FileUploaded>? {
+        return null
+    }
 }

@@ -25,4 +25,9 @@ class AppControllerImplementation(val appService: AppServiceInterface) : AppCont
     override fun capacity(): String {
         return appService.capacity()
     }
+
+    @GetMapping("/getFiles")
+    override fun getFiles(): List<FileUploaded>? {
+        return appService.getFiles()
+    }
 }
